@@ -1,7 +1,7 @@
 const User = require('./User');
 const Post = require('./Post');
 
-// create associations
+// create associations referencing post user_id -> which references the user(id)
 User.hasMany(Post, {
 	foreignKey: 'user_id',
 });
